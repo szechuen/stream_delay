@@ -1,2 +1,3 @@
-# stream_delay
-Delays audio stream in Python
+# Stream Delay
+
+Internet radio has dealt with space. Now let's control time. 

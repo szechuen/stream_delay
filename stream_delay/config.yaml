@@ -1,0 +1,32 @@
+streams:
+    - name: 987fm
+      h_name: 987FM
+      url: http://mediacorp.rastream.com/987fm
+
+    - name: 933fm
+      h_name: Y.E.S. 93.3FM
+      url: http://mediacorp.rastream.com/933fm
+
+audio_codec_input: libfdk_aac
+audio_codec: libopus
+audio_quality: 4
+audio_bitrate: 128k
+audio_ext: ogg
+
+segment_time: 60
+archive_period: 86400
+
+base_path: /home/stream_delay/
+chunk_path: /home/stream_delay/chunks/
+log_path: /home/stream_delay/log/
+
+run_as: stream_delay
+
+icecast:
+    host: localhost
+    port: 8000
+    user: source
+    password: replace_this
+    bitrates: 
+        - 128000
+    samplerate: 48000
